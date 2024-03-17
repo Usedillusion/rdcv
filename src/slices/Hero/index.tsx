@@ -5,6 +5,8 @@ import { useEffect, useRef } from "react";
 import { Content, KeyTextField } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { gsap } from "gsap";
+import Bounded from "@/components/Bounded";
+
 /**
  * Props for `Hero`.
  */
@@ -30,6 +32,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             ease:"circ.out",
             duration:0.75,
             transformOrigin: "left top",
+            delay:0.5,
             stagger:{
               each: 0.1,
               from: "random",
@@ -68,7 +71,7 @@ const renderLetters = (name:KeyTextField, key:string) =>{
 }
 
   return (
-    <section
+    <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       ref={component}
@@ -92,7 +95,7 @@ const renderLetters = (name:KeyTextField, key:string) =>{
           </span>
       </div>
       </div>
-    </section>
+    </Bounded>
   );
 };
 

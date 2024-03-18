@@ -31,9 +31,9 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             opacity: 1,
             rotate:0,
             ease:"circ.out",
-            duration:0.75,
+            duration:0.5,
             transformOrigin: "left top",
-            delay:0.5,
+            //delay:0.2,
             stagger:{
               each: 0.1,
               from: "random",
@@ -49,7 +49,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           }, {
             opacity:1,
             y:0,
-            duration:1,
+            duration:.5,
             scale:1,
             ease:"elastic.out(2,0.3)",
 

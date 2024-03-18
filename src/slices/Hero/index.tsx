@@ -24,7 +24,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         const tl = gsap.timeline()
 
           tl.fromTo(".name-animation",{
-            x: -500, opacity:0, rotate: -60, 
+            x: -100, opacity:0, rotate: -60, 
           },
           {
             x:0,

@@ -8,6 +8,7 @@ import { gsap } from "gsap";
 import Bounded from "@/components/Bounded";
 import Shapes from "./Shapes";
 
+
 /**
  * Props for `Hero`.
  */
@@ -31,7 +32,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             opacity: 1,
             rotate:0,
             ease:"circ.out",
-            duration:0.5,
+            duration:0.2,
             transformOrigin: "left top",
             //delay:0.2,
             stagger:{
@@ -49,7 +50,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           }, {
             opacity:1,
             y:0,
-            duration:.5,
+            duration:.3,
             scale:1,
             ease:"elastic.out(2,0.3)",
 
@@ -77,7 +78,7 @@ const renderLetters = (name:KeyTextField, key:string) =>{
       data-slice-variation={slice.variation}
       ref={component}
     >
-      <div className="grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
+      <div className="grid min-h-[70vh] grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-2">
         <Shapes />
         <div className="col-start-1 md:row-start-1">
           <h1 className="mb-8 text-[clamp(3rem,20vmin,20rem)] font-extrabold leading-none tracking-tighter" 

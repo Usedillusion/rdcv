@@ -6,10 +6,11 @@ import { PrismicNextLink } from "@prismicio/next";
 
 
 export default async function Header(){
-    const client = createClient("");
+    const client = createClient();
     const settings = await client.getSingle("settings");
     return (
-        <header className="top-0 z-50 mx-auto max-w-7xl md:sticky md:top-4">
+//changed to 8xl from 7 and mx from auto to 8
+        <header className="top-0 z-50 mx-8 max-w-8xl md:sticky md:top-4"> 
             <nav>
                 <ul>
                     <li>

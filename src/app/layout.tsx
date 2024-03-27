@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className={clsx(urbanist.className, "relative min-h-screen")}>
         <Header/>
         {children}
+        <div className="h-[500vh]"/>
         </body>
     </html>
   );

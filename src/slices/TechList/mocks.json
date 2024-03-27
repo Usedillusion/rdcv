@@ -1,0 +1,36 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "lunch",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tech_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "movie",
+							"type": "Text"
+						}
+					],
+					[
+						"tech_colour",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#bbef14",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
+	}
+]

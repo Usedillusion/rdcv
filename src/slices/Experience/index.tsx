@@ -1,6 +1,7 @@
 import Bounded from "@/components/Bounded";
 import Heading from "@/components/Heading";
 import { Content } from "@prismicio/client";
+import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 
 /**
@@ -34,6 +35,7 @@ const Experience = ({ slice }: ExperienceProps): JSX.Element => {
           <div className="prose prose-lg prose-invert mt-4">
             <PrismicRichText field={item.description} />
           </div>
+          <PrismicNextImage field={item.image}></PrismicNextImage>
         </div>
       ))}
     </Bounded>

@@ -9,7 +9,7 @@ export const repositoryName =
   process.env.NEXT_PUBLIC_PRISMIC_ENVIRONMENT || config.repositoryName;
 
 /**
- * A list of Route Resolver objects that define how a document's `url` field is resolved.
+ * AA list of Route Resolver objects that define how a document's `url` field is resolved.
  *
  * {@link https://prismic.io/docs/route-resolver#route-resolver}
  */

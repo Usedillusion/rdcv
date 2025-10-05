@@ -3,7 +3,7 @@ import * as prismicNext from "@prismicio/next";
 import config from "../slicemachine.config.json";
 
 /**
- * The project's Prismic repository name...
+ * The project's Prismic repository name....
  */
 export const repositoryName = 
   process.env.NEXT_PUBLIC_PRISMIC_ENVIRONMENT || config.repositoryName;
